@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    margin: 0;
+}
+
+nav {
+    padding: 0 32px;
+    display: block;
+    background: rgb(42, 42, 42);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav img {
+    height: 120px;
+    background: linear-gradient(to top, rgb(42, 42, 42), rgb(27, 214, 199));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    float: left;
+}
+
+nav a {
+    color: white;
+    padding: 32px 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    float: left;
+    background: linear-gradient(rgb(42, 42, 42) 50%, rgb(42, 42, 42) 50%, rgb(27, 214, 199) 100%);
+    background-size: 100% 200%;
+    background-position: top center;
+    transition: .2s background;
+}
+
+nav a:hover {
+    background-position: bottom center;
+}
+
+header {
+    display: block;
+    margin: auto;
+    padding: 80px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: url("clear_arrow.png"), linear-gradient(90deg, rgb(12, 119, 110), rgba(0, 0, 0, 0)), url("https://images.pexels.com/photos/1036841/pexels-photo-1036841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-position: center;
+    margin-top: 90px;
+}
+
+header img {
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 18px 0 6px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
+header h2 {
+    margin: 6px 0 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+header a {
+    display: inline-block;
+    margin: 12px 0 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+    max-width: 800px;
+    border: 2px white solid;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: rgb(42, 42, 42);
+}
+
+article.col_2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+article div {
+    padding: 80px 40px;
+}
+
+article.col_2 div {
+    background: linear-gradient(45deg, rgb(88, 88, 88) 5%, rgb(88, 88, 88) 5%, rgb(42, 42, 42) 5%, rgb(42, 42, 42) 90%, rgb(27, 214, 199) 90%, rgb(27, 214, 199) 100%);
+}
+
+article h1 {
+    margin: 18px 0 6px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 32px;
+    max-width: 800px;
+}
+
+article h2 {
+    margin: 6px 0 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 24px;
+    max-width: 800px;
+}
+
+article i {
+    font-size: 60px;
+    color: rgb(27, 214, 199);
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+article a {
+    display: inline-block;
+    margin: 12px 0 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+    max-width: 800px;
+    border: 2px white solid;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgb(42, 42, 42);
+}
+
+article p {
+    margin: 6px 0 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+    max-width: 800px;
+}
+
+article img {
+    border-radius: 50%;
+    border: 8px rgb(27, 214, 199) double;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+article ul li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+}
+
+section {
+    background: url("clear_arrow.png"), linear-gradient(90deg, rgb(12, 119, 110), rgba(0, 0, 0, 0)), url("https://images.pexels.com/photos/1036841/pexels-photo-1036841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+    margin: 18px 0 6px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 48px;
+}
+
+section h2 {
+    margin: 6px 0 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 32px;
+}
+
+section p, section label {
+    margin: 6px 0 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+    max-width: 1200px;
+}
+
+section form div {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+section label {
+    display: block;
+    margin-bottom: 0;
+}
+
+section a, section input {
+    display: inline-block;
+    margin: 12px 0 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+    max-width: 800px;
+    border: 2px white solid;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+section input {
+    margin-top: 2px;
+    background: transparent;
+}
+
+div.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: rgb(245, 252, 251);
+    padding: 80px 40px;
+}
+
+div.portfolio div {
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    border-radius: 10px;
+    background: rgb(245, 252, 251);
+}
+
+div.portfolio h1 {
+    margin: 18px 0 6px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgb(42, 42, 42);
+    font-size: 32px;
+    max-width: 800px;
+}
+
+div.portfolio h2 {
+    margin: 6px 0 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: rgb(42, 42, 42);
+    font-size: 24px;
+}
+
+div.portfolio img {
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    width: 100%;
+}
+
+div.portfolio a {
+    display: inline-block;
+    margin: 12px 0 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgb(42, 42, 42);
+    font-size: 18px;
+    max-width: 800px;
+    border: 2px rgb(42, 42, 42) solid;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+div.portfolio a.about {
+    border: 2px rgb(27, 214, 199) solid;
+}
